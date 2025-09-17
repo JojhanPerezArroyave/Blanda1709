@@ -1,13 +1,13 @@
-# top-headlinesroom Dashboard Backend
+# News Api room Dashboard Backend
 
-Este proyecto provee una API agregadora de noticias para el dashboard colaborativo del equipo, utilizando top-headlinesAPI y JSONPlaceholder.
+Este proyecto provee una API agregadora de noticias para el dashboard colaborativo del equipo, utilizando newsAPI y JSONPlaceholder.
 
 ## Descripción
 
 La API permite obtener noticias por categoría, buscar por palabras clave, consultar comentarios y marcar noticias como leídas o relevantes. Está pensada para integrarse con un frontend en React y soporta funcionalidades en tiempo real.
 
 ## APIs Utilizadas
-- **top-headlinesAPI**: https://top-headlinesapi.org/ (hasta 1000 requests/día)
+- **newsAPI**: https://newsapi.org/ (hasta 1000 requests/día)
 - **JSONPlaceholder**: https://jsonplaceholder.typicode.com/ (para comentarios)
 
 ## Endpoints
