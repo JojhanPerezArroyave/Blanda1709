@@ -1,0 +1,263 @@
+body {
+  margin: 0;
+  font-family: Arial,
+    sans-serif;
+  background: #f9f9f9;
+}
+
+.app-container {
+  padding: 1rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #222;
+  color: white;
+  padding: 0.8rem
+    1.2rem;
+  border-radius: 10px;
+}
+
+.header
+  .logo {
+  font-weight: bold;
+  background: #fff;
+  color: #222;
+  border-radius: 50%;
+  padding: 0.5rem
+    0.8rem;
+}
+
+.search-bar {
+  display: flex;
+  margin: 1rem
+    0;
+}
+
+.search-bar
+  input {
+  flex: 1;
+  padding: 0.6rem;
+  border: 1px
+    solid
+    #ccc;
+  border-radius: 8px
+    0
+    0
+    8px;
+}
+
+.search-bar
+  button {
+  padding: 0.6rem
+    1rem;
+  border: none;
+  background: #444;
+  color: white;
+  border-radius: 0
+    8px
+    8px
+    0;
+  cursor: pointer;
+}
+
+.category-filter {
+  display: flex;
+  align-items: center;
+  gap: 0.8rem;
+  margin: 1rem
+    0;
+  font-size: 1rem;
+}
+
+.filter-label {
+  font-weight: bold;
+  color: #333;
+}
+
+.filter-select {
+  padding: 0.5rem
+    1rem;
+  border: 2px
+    solid
+    #0077ff;
+  border-radius: 8px;
+  background: white;
+  font-size: 1rem;
+  color: #333;
+  cursor: pointer;
+  transition: all
+    0.3s
+    ease;
+  outline: none;
+}
+
+.filter-select:hover {
+  border-color: #005fcc;
+  background: #f5f9ff;
+}
+
+.filter-select:focus {
+  border-color: #003d99;
+  box-shadow: 0
+    0
+    6px
+    rgba(
+      0,
+      119,
+      255,
+      0.4
+    );
+}
+
+.cards-container {
+  display: flex;
+  gap: 1rem;
+  overflow-x: auto; /* permite scroll horizontal */
+  scroll-behavior: smooth;
+  scrollbar-width: none; /* oculta scroll en Firefox */
+  -ms-overflow-style: none; /* oculta scroll en IE/Edge */
+  flex: 1;
+  padding: 1rem
+    0;
+}
+
+.cards-container::-webkit-scrollbar {
+  display: none; /* oculta scroll en Chrome/Safari */
+}
+
+/* ✅ Evita que las tarjetas se achiquen */
+.news-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 220px; /* ancho fijo */
+  flex-shrink: 0; /* no se encoge */
+  box-shadow: 0
+    2px
+    5px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+}
+
+.news-card {
+  background: white;
+  border-radius: 12px;
+  padding: 1rem;
+  width: 200px;
+  box-shadow: 0
+    2px
+    5px
+    rgba(
+      0,
+      0,
+      0,
+      0.1
+    );
+}
+
+.news-card
+  .image-placeholder {
+  height: 100px;
+  background: #ddd;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.card-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 0.5rem;
+}
+
+/* Botón "Ver más" */
+.view-btn {
+  background: linear-gradient(
+    135deg,
+    #0077ff,
+    #00c6ff
+  );
+  color: white;
+  border: none;
+  padding: 0.5rem
+    1rem;
+  border-radius: 8px;
+  font-size: 0.9rem;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all
+    0.3s
+    ease;
+}
+
+.view-btn:hover {
+  background: linear-gradient(
+    135deg,
+    #005fcc,
+    #0099cc
+  );
+  transform: translateY(
+    -2px
+  );
+  box-shadow: 0
+    4px
+    8px
+    rgba(
+      0,
+      119,
+      255,
+      0.3
+    );
+}
+
+/* Botones de navegación del carrusel */
+.nav-btn {
+  background: #ffffff;
+  border: 2px
+    solid
+    #0077ff;
+  color: #0077ff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: all
+    0.3s
+    ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-btn:hover {
+  background: #0077ff;
+  color: white;
+  transform: scale(
+    1.1
+  );
+  box-shadow: 0
+    4px
+    8px
+    rgba(
+      0,
+      119,
+      255,
+      0.3
+    );
+}
+
+.carousel-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
