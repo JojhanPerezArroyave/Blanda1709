@@ -18,20 +18,19 @@ const Carousel = ({ news }) => {
 
   return (
     <div className="carousel-wrapper">
-      <button className="nav-btn" onClick={scrollLeft}>⬅️</button>
-      
+      <button className="nav-btn" onClick={scrollLeft}>
+        ⬅️
+      </button>
+
       <div className="cards-container" ref={scrollRef}>
-        {news.map((item, index) => (
-          <NewsCard
-            key={index}
-            date={item.date}
-            title={item.title}
-            description={item.description}
-          />
+        {news.map((article, index) => (
+          <NewsCard key={index} article={article} />
         ))}
       </div>
 
-      <button className="nav-btn" onClick={scrollRight}>➡️</button>
+      <button className="nav-btn" onClick={scrollRight}>
+        ➡️
+      </button>
     </div>
   );
 };
