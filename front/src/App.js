@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 
-const API_KEY = "8405d6b89ed446f6867509f166526e40";
+const API_KEY = process.env.REACT_APP_NEWSAPI_KEY;
 const CATEGORIES = ["business","entertainment","general","health","science","sports","technology"];
 const BASE = "https://newsapi.org/v2/top-headlines";
 
